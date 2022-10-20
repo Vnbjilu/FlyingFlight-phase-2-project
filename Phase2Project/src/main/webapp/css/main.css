@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+.userpage
+{
+	
+	background-image:linear-gradient(to left,rgb(191,221,2),rgb(211,111,224));
+}
+.tablenav
+{
+	
+	background-color:#039590;
+	color:white;
+	width:75%;
+	height:100px;
+	margin:50px;
+	
+	
+}
+.tablenav td
+{
+	padding:10px;
+	font-size:2em;
+	
+}
+.tablenav td a
+{
+	color:white;
+}
+.tablenav td a:hover
+{
+	background-color:rgb(221,61,178);
+	color:white;
+}

@@ -31,3 +31,9 @@
 	background-color:rgb(221,61,178);
 	color:white;
 }
+.content
+{
+	max-height:50%;
+	background-color:rgb(5,198,190);
+	margin-left:100px;
+}

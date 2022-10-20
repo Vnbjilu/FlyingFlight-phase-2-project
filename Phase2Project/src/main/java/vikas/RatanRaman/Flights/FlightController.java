@@ -26,11 +26,37 @@ public class FlightController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		String action=request.getParameter("action");
-		if(action.equalsIgnoreCase("add flights"))
+		if(action.equalsIgnoreCase("addfrm"))
 			addFlightsFrm(request,response);
-		else if(action.equals("delete Flights"))
+		else if(action.equalsIgnoreCase("deletefrm"))
 			deleteFlightsFrm(request,response);
+		else if(action.equalsIgnoreCase("displayfrm"))
+			displayFlightFrm(request,response);
+		else if(action.equalsIgnoreCase("editfrm"))
+			editFlightsFrm(request,response);
 				
+	}
+
+	private void editFlightsFrm(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void displayFlightFrm(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void deleteFlightsFrm(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void addFlightsFrm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.getRequestDispatcher("addFlightFrm.jsp").forward(request, response);
+		
 	}
 }

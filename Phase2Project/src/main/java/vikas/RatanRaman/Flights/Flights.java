@@ -23,18 +23,15 @@ public class Flights {
 	@Column(length=20)
 	private String toLocation;
 	
-	@Column(length=12)
-	private String arriveTime;
-	
-	private int capacity;
-	
 	@Column(length=30)
 	private String airlineName;
 	
-	@Column(length=15)
-	private String duration;
+	@Column(length=12)
+	private String arrivalTime;
 	
 	@Column(length=12)
 	private String departTime;
-
+	
+	private int capacity;
+	
 }

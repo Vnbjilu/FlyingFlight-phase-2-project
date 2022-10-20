@@ -16,12 +16,7 @@
   	<description></description>
   	<servlet-class>vikas.RatanRaman.User.UserController</servlet-class>
   </servlet>
-  <servlet>
-  	<servlet-name>FlightController</servlet-name>
-  	<display-name>FlightController</display-name>
-  	<description></description>
-  	<servlet-class>vikas.RatanRaman.Flights.FlightController</servlet-class>
-  </servlet>
+ 
   <servlet-mapping>
   	<servlet-name>PageController</servlet-name>
   	<url-pattern>/PageController</url-pattern>
@@ -30,8 +25,15 @@
   	<servlet-name>UserController</servlet-name>
   	<url-pattern>/UserPage</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>FlightController</servlet-name>
+  <servlet-class>vikas.RatanRaman.Flights.FlightController</servlet-class>
+  <load-on-startup>2</load-on-startup>
+  
+  </servlet>
   <servlet-mapping>
   	<servlet-name>FlightController</servlet-name>
-  	<url-pattern>/FlightController</url-pattern>
+  	<url-pattern>/FlightPage</url-pattern>
   </servlet-mapping>
 </web-app>

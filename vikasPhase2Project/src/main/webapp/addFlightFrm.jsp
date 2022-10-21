@@ -1,6 +1,6 @@
 <jsp:include page="FlightsHeader.jsp"></jsp:include>
 <div align="center" class="content">
-<form action="FlightPage" Method="post">
+<form action="FlightPage">
 <table border="1">
 <tr>
 	<td colspan="2"> Flight Adding Form</td>
@@ -31,14 +31,19 @@
 </tr>
 <tr>	
 	<Td> Capcity</Td>
-	<td><input type="number" name="capcity"></td>
+	<td><input type="text" name="capacity"></td>
+</tr>
+<tr>	
+	<Td> Fair</Td>
+	<td><input type="text" name="fair"></td>
 </tr>
 <tr>
 	<td colspan="2"> <input type="submit" value="Add Flights"><input type="reset" value="Clear ">
 	</td>
 </tr>
-<input type="hidden" name="action" value="add">
+<input type="hidden" name="action" value="AddFlight">
 </table>
+</form>
 </div>
 <jsp:include page="FlightsFooter.jsp"></jsp:include>
 
